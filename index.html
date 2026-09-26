@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style/bootstrap.css" />
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row px-5">
+            <h1 class="mx-auto text-center my-4">Library Inventory</h1>
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <div class="mb-3">
+                    <label for="bookName" class="form-label">Book Name</label>
+                    <input type="text" class="form-control shadow-none" id="bookName" />
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <div class="mb-3">
+                    <label for="authorName" class="form-label">Book Author</label>
+                    <input type="text" class="form-control shadow-none" id="authorName" />
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <div class="mb-3">
+                    <label for="bookPrice" class="form-label">Book Price</label>
+                    <input type="text" class="form-control shadow-none" id="bookPrice" />
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <div class="mb-3">
+                    <label for="bookQuantity" class="form-label">Book Quantity</label>
+                    <input type="text" class="form-control shadow-none" id="bookQuantity" />
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <div class="mb-3">
+                    <label for="bookisbnNumber" class="form-label">ISBN Number</label>
+                    <input type="text" class="form-control shadow-none" id="bookisbnNumber" />
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <div class="mb-3">
+                    <label for="bookPublisher" class="form-label">Publisher Name</label>
+                    <input type="text" class="form-control shadow-none" id="bookPublisher" />
+                </div>
+            </div>
+            <div class="col-sm-12">
+                <div class="mb-3">
+                    <label for="bookDescription">Description</label>
+                    <textarea class="form-control shadow-none" id="bookDescription"></textarea>
+                </div>
+            </div>
+            <div class="col-sm-12 text-center mx-auto">
+                <button type="submit" id="btnsave" class="btn btn-primary px-4">Save</button>
+                <button type="submit" id="btnrest" class="btn btn-dark px-4">Rest</button>
+            </div>
+
+
+            <table class="table mt-5" id="tblBookData" style="display: none;">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Book Name</th>
+                        <th scope="col">Book Author</th>
+                        <th scope="col">Book Price</th>
+                        <th scope="col">Book Quanity</th>
+                        <th scope="col">ISBN NUmber</th>
+                        <th scope="col">Publisher Name</th>
+                        <th scope="col">Action</th>
+                    </tr>
+                </thead>
+                <tbody id="tblBodyBookData">
+                </tbody>
+            </table>
+
+
+        </div>
+
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
